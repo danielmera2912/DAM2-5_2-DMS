@@ -8,19 +8,19 @@ interface Dispara {
 open class Casa(nombre: String): Dispara{
     var nombre=nombre
     override fun dispara(){
-        println("El arma "+this.nombre+" ha disparado por la puerta")
+        println(this.nombre+" ha disparado por la puerta")
     }
 }
 open class Coche(nombre: String): Dispara{
     var nombre=nombre
     override fun dispara(){
-        println("El arma "+this.nombre+" ha disparado por el tubo de escape")
+        println(this.nombre+" ha disparado por el tubo de escape")
     }
 }
 open class Bocadillo(nombre: String): Dispara{
     var nombre=nombre
     override fun dispara(){
-        println("El arma "+this.nombre+" ha disparado?")
+        println(this.nombre+" ha disparado?")
     }
 }
 open class ArmaDeFuego(): Dispara {
